@@ -11,9 +11,24 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      theme: ThemeData(
+        brightness: Brightness.light,
+        primaryColor: Colors.orange,
+        primarySwatch: Colors.orange,
+        scaffoldBackgroundColor: Colors.blue.shade100,
+        elevatedButtonTheme: ElevatedButtonThemeData(
+          style: ElevatedButton.styleFrom(
+            backgroundColor: Colors.red,
+            foregroundColor: Colors.white,
+            shape: RoundedRectangleBorder(
+              borderRadius: BorderRadius.circular(50)
+            )
+          )
+        )
+      ),
       debugShowCheckedModeBanner: false,
       title: 'Flutter 15',
-      home: M10class3(),
+      home: Class2(),
     );
   }
 }

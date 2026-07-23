@@ -76,10 +76,6 @@ class Class2 extends StatelessWidget {
               height: 50,
               width: 300,
               child: ElevatedButton(
-                style: ElevatedButton.styleFrom(
-                  backgroundColor: Colors.green,
-                  foregroundColor: Colors.white,
-                ),
                   onPressed: (){
                     if(_formKey.currentState!.validate()){
                       ScaffoldMessenger.of(context).showSnackBar(

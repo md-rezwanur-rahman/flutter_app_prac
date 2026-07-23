@@ -7,6 +7,7 @@ class M10class3 extends StatelessWidget {
     Size screenSize = MediaQuery.of(context).size;
     double screenHeight = screenSize.height;
     double screenWidth = screenSize.width;
+    final Orientation orientation = MediaQuery.of(context).orientation;
     return Scaffold(
       appBar: AppBar(
         title: Text('Class 3'),
@@ -18,17 +19,31 @@ class M10class3 extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Container(
-              height: 150,
-              width: 300,
-              decoration: BoxDecoration(
-                color: Colors.red
+            orientation == Orientation.portrait ?Column(
+              children: [Container(
+                height: screenHeight*0.18,
+                width: screenWidth*0.6,
+                decoration: BoxDecoration(
+                    color: Colors.red
+                ),
               ),
+                Text('Test',
+                  style: TextStyle(
+                      fontSize: 20
+                  ),)],
+            ) : Row(
+              children: [Container(
+                height: screenHeight*0.18,
+                width: screenWidth*0.6,
+                decoration: BoxDecoration(
+                    color: Colors.red
+                ),
+              ),
+                Text('Test',
+                  style: TextStyle(
+                      fontSize: 20
+                  ),)],
             ),
-            Text('Test',
-            style: TextStyle(
-              fontSize: 20
-            ),)
           ],
         ),
       ),
