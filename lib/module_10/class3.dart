@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 class M10class3 extends StatelessWidget {
   const M10class3({super.key});
 
@@ -33,15 +34,15 @@ class M10class3 extends StatelessWidget {
                   ),)],
             ) : Row(
               children: [Container(
-                height: screenHeight*0.18,
-                width: screenWidth*0.6,
+                height: 150.h,
+                width: 300.w,
                 decoration: BoxDecoration(
                     color: Colors.red
                 ),
               ),
                 Text('Test',
                   style: TextStyle(
-                      fontSize: 20
+                      fontSize: 20.sp
                   ),)],
             ),
           ],
