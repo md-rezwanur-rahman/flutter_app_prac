@@ -10,6 +10,9 @@ import 'module11/hotel_ui.dart';
 import 'module_10/class3.dart';
 import 'module_10/class_1.dart';
 import 'module_10/class_2.dart';
+import 'module_12/navi/page1.dart';
+import 'module_12/navi/page2.dart';
+import 'module_12/navi/page3.dart';
 import 'module_9/class_3.dart';
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
@@ -23,6 +26,12 @@ class MyApp extends StatelessWidget {
         // Use builder only if you need to use library outside ScreenUtilInit context
         builder: (_ , child) {
           return MaterialApp(
+            routes: {
+              '/page1':(context)=>page1(),
+              '/page2':(context)=>page2(name: '',),
+              '/page3':(context)=>page3(),
+            },
+            initialRoute: '/page1',
       theme: ThemeData(
         brightness: Brightness.light,
         primaryColor: Colors.orange,
@@ -45,7 +54,7 @@ class MyApp extends StatelessWidget {
       ),
       debugShowCheckedModeBanner: false,
       title: 'Flutter 15',
-      home: Alart(),
+      // home: page1(),
     );},
     );
   }
