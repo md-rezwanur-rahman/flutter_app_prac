@@ -3,7 +3,10 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:my_app/home.dart';
 import 'package:my_app/module11/class_1.dart';
 
+import 'module11/Class_3.dart';
 import 'module11/Grid.dart';
+import 'module11/class_2.dart';
+import 'module11/hotel_ui.dart';
 import 'module_10/class3.dart';
 import 'module_10/class_1.dart';
 import 'module_10/class_2.dart';
@@ -42,7 +45,7 @@ class MyApp extends StatelessWidget {
       ),
       debugShowCheckedModeBanner: false,
       title: 'Flutter 15',
-      home: GridV(),
+      home: Alart(),
     );},
     );
   }

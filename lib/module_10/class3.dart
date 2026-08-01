@@ -21,7 +21,8 @@ class M10class3 extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             orientation == Orientation.portrait ?Column(
-              children: [Container(
+              children: [
+                Container(
                 height: screenHeight*0.18,
                 width: screenWidth*0.6,
                 decoration: BoxDecoration(
