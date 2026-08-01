@@ -10,6 +10,7 @@ import 'module11/hotel_ui.dart';
 import 'module_10/class3.dart';
 import 'module_10/class_1.dart';
 import 'module_10/class_2.dart';
+import 'module_12/navi/class_2.dart';
 import 'module_12/navi/page1.dart';
 import 'module_12/navi/page2.dart';
 import 'module_12/navi/page3.dart';
@@ -30,8 +31,9 @@ class MyApp extends StatelessWidget {
               '/page1':(context)=>page1(),
               '/page2':(context)=>page2(name: '',),
               '/page3':(context)=>page3(),
+              '/Module12Class3':(context)=>Module12Class3(),
             },
-            initialRoute: '/page1',
+            initialRoute: '/Module12Class3',
       theme: ThemeData(
         brightness: Brightness.light,
         primaryColor: Colors.orange,
